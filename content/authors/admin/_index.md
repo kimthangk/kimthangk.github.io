@@ -46,10 +46,6 @@ profiles:
   - icon: academicons/orcid
     url: https://orcid.org/0000-0001-8554-8582/
 
-interests:
-  - Emotion
-  - Morality
-  - Well-being
 
 education:
   - area: MSc Psychological Research
