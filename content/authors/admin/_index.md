@@ -20,11 +20,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MSc Graduate
+role:
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Oxford
+  - name:
     url: 
 
 # Social network links
