@@ -5,7 +5,7 @@
 
 main:
   - name: Home
-    url: /
+    url: Home/
     weight: 10
   - name: My Story
     url: My Story/
