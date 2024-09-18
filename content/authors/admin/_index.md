@@ -86,7 +86,7 @@ education:
   - area: BA Psychology
     institution: The University of Queensland, Australia
     date_start: 2020-08-01
-    date_end: 2021-12-31
+    date_end: 2021-12-10
     summary: |
       GPA: 6.5/7.0
       
