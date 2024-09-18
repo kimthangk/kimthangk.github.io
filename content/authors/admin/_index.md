@@ -47,5 +47,4 @@ profiles:
     url: https://orcid.org/0000-0001-8554-8582/
 
 ---
-
-Thanakorn Angkasirisan is an MSc Psychological Research Student at the University of Oxford. He holds an MSc in Health Psychology from UCL, and a dual bachelor's degree in psychology from Chulalongkorn University and the University of Queensland. His research interests include emotion, morality, and well-being.
+Hello! My name is Thanakorn Angkasirisan, or unofficially as Kim. I am an interdisciplinary researcher based remotely at home in Bangkok, Thailand. I work on topics across psychology, neuroscience, epidemiology, bioethics, and AI. I hold an MSc in Psychological Research from the University of Oxford (2024), an MSc in Health Psychology from UCL (2023), and a dual bachelor's degree in psychology from Chulalongkorn University (2022) and the University of Queensland (2021).
