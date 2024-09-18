@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MSc Graduate
+role: MSc Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,37 +34,37 @@ profiles:
     url: 'mailto:thanakorn_ang@hotmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://x.com/angkasirisan_t
+    url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
     url: https://www.instagram.com/kimthangk
   - icon: brands/github
     url: https://github.com/kimthangk
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/thanakorn-angkasirisan/
+    url: https://www.linkedin.com/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0001-8554-8582/
+    url: https://orcid.org/
 
 interests:
-  - Emotion
-  - Morality
-  - Well-being
+  - Artificial Intelligence
+  - Computational Linguistics
+  - Information Retrieval
 
 education:
   - area: MSc Psychological Research
-    institution: University of Oxford, UK
-    date_start: 2023-09-31
-    date_end: 2024-09-31
+    institution: University of Oxford, United Kingdom
+    date_start: 2016-01-01
+    date_end: 2020-12-31
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
   - area: MSc Health Psychology
-    institution: University College London, UK
-    date_start: 2022-09-15
-    date_end: 2023-09-15
+    institution: University College London, United Kingdom
+    date_start: 2016-01-01
+    date_end: 2020-12-31
     summary: |
       GPA: 3.8/4.0
 
@@ -74,10 +74,10 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: BSc Psychological Science
     institution: Chulalongkorn University, Thailand
-    date_start: 2018-08-01
-    date_end: 2022-05-31
+    date_start: 2016-01-01
+    date_end: 2020-12-31
     summary: |
-      GPA: 3.87/4.00
+      GPA: 3.4/4.0
       
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -85,13 +85,13 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: BA Psychology
     institution: The University of Queensland, Australia
-    date_start: 2020-08-01
-    date_end: 2021-12-31
+    date_start: 2016-01-01
+    date_end: 2020-12-31
     summary: |
-      GPA: 6.5/7.0
+      GPA: 3.4/4.0
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elitt
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
