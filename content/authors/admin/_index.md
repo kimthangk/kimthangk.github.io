@@ -31,14 +31,14 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:thanakorn_ang@hotmail.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/kimthangk
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/kimthangk
   - icon: brands/linkedin
     url: https://www.linkedin.com/
   - icon: academicons/google-scholar
@@ -52,8 +52,8 @@ interests:
   - Information Retrieval
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
+  - area: MSc Psychological Research
+    institution: University of Oxford, United Kingdom
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -61,8 +61,8 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: MSc Health Psychology
+    institution: University College London, United Kingdom
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -72,8 +72,19 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: BSc Psychological Science
+    institution: Chulalongkorn University, Thailand
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      GPA: 3.4/4.0
+      
+      Courses included:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: BA Psychology
+    institution: The University of Queensland, Australia
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -112,15 +123,23 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: R
         description: ''
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: MATLAB
         description: ''
-        percent: 100
+        percent: 80
         icon: chart-bar
-      - name: SQL
+      - name: STATA
+        description: ''
+        percent: 80
+        icon: circle-stack
+      - name: SPSS
+        description: ''
+        percent: 80
+        icon: circle-stack
+      - name: Python
         description: ''
         percent: 40
         icon: circle-stack
@@ -142,12 +161,10 @@ skills:
         icon: camera
 
 languages:
+  - name: Thai
+    percent: 100
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -183,4 +200,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Thanakorn Angkasirisan is an MSc Psychological Research Student at the University of Oxford. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
