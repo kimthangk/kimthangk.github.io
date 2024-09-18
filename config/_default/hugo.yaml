@@ -6,7 +6,7 @@
 # Website name
 title: Thanakorn Angkasirisan
 # Website URL
-baseURL: 'thanakornangkasirisan.com'
+baseURL: 'https://example.com/'
 
 ############################
 ## LANGUAGE
