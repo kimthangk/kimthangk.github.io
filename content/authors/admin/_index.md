@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MSc Student
+role: MSc Graduate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,26 +34,26 @@ profiles:
     url: 'mailto:thanakorn_ang@hotmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://x.com/angkasirisan_t
   - icon: brands/instagram
     url: https://www.instagram.com/kimthangk
   - icon: brands/github
     url: https://github.com/kimthangk
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/thanakorn-angkasirisan/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0000-0001-8554-8582/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Emotion
+  - Morality
+  - Well-being
 
 education:
   - area: MSc Psychological Research
-    institution: University of Oxford, United Kingdom
+    institution: University of Oxford, UK
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -62,7 +62,7 @@ education:
       text: 'Read Thesis'
       url: 'https://example.com'
   - area: MSc Health Psychology
-    institution: University College London, United Kingdom
+    institution: University College London, UK
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
