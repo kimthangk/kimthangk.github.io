@@ -200,4 +200,4 @@ awards:
 
 ## About Me
 
-Thanakorn Angkasirisan is an MSc Psychological Research Student at the University of Oxford. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Thanakorn Angkasirisan is an MSc Psychological Research Student at the University of Oxford. He holds an MSc in Health Psychology from UCL, and a dual bachelor's degree in psychology from Chulalongkorn University and the University of Queensland. His research interests include emotion, morality, and well-being.
