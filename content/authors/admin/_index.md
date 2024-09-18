@@ -48,6 +48,4 @@ profiles:
 
 ---
 
-## About Me
-
 Thanakorn Angkasirisan is an MSc Psychological Research Student at the University of Oxford. He holds an MSc in Health Psychology from UCL, and a dual bachelor's degree in psychology from Chulalongkorn University and the University of Queensland. His research interests include emotion, morality, and well-being.
