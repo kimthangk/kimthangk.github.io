@@ -3,136 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
+  <title>Your Name</title> <!-- Change this to your name -->
   <style>
-    /* ===== Base styles ===== */
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      scroll-behavior: smooth;
-      background-color: #111;
-      color: #fff;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #111;
+      scroll-behavior: smooth; /* Enables smooth scrolling */
     }
 
-    /* Snap scrolling setup */
-    html {
-      scroll-snap-type: y mandatory;
-    }
-
-    section {
-      height: 100vh;
-      scroll-snap-align: start;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 5rem;
-    }
-
-    /* Typography */
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      line-height: 1.6;
-    }
-
-    /* Navigation */
     nav {
       position: fixed;
-      top: 50%;
-      left: 2rem;
-      transform: translateY(-50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
       z-index: 1000;
     }
 
     nav a {
-      color: #888;
       text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.3s;
-    }
-
-    nav a.active {
-      color: #fff;
+      color: #111;
+      font-weight: bold;
+      font-size: 1rem;
     }
 
     nav a:hover {
-      color: #fff;
+      color: #555;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem; /* Top padding accounts for nav height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== Fixed Navigation ===== -->
+  <!-- Navigation Menu -->
   <nav>
-    <!-- Change link text to match your sections -->
-    <a href="#home" class="active">Home</a>
+    <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- ===== Sections ===== -->
-
+  <!-- Home Section -->
   <section id="home">
-    <!-- ✏️ Change your name -->
-    <h1>Your Name</h1>
-    <!-- ✏️ Change your tagline -->
-    <p>Creative developer & designer exploring minimalism and meaning.</p>
+    <h1>Your Name</h1> <!-- Edit your name -->
+    <p>Short tagline about you, e.g., "Designer, Developer, Dreamer."</p> <!-- Edit tagline -->
   </section>
 
+  <!-- About Section -->
   <section id="about">
-    <h1>About</h1>
-    <!-- ✏️ Change your bio -->
-    <p>I’m a multidisciplinary creator who loves blending technology and art. 
-       My work focuses on building meaningful digital experiences with clean design and a human touch.</p>
+    <h2>About</h2>
+    <p>Write a brief bio here. Mention your background, interests, and goals. Keep it concise, like a few sentences.</p>
   </section>
 
-  <section id="work">
-    <h1>Work</h1>
-    <!-- ✏️ Add details of your projects -->
-    <p>Recent projects include experimental websites, generative art, and interactive storytelling pieces. 
-       My portfolio reflects a passion for simplicity, clarity, and intentional design.</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>List some projects you’ve worked on. You can include links, descriptions, or even images if you want to expand later.</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
-    <h1>Contact</h1>
-    <!-- ✏️ Add your preferred contact method -->
-    <p>Email: youremail@example.com<br>
-       Twitter: @yourhandle</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Social: <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a> | <a href="https://github.com/yourhandle" target="_blank">GitHub</a></p>
   </section>
 
-  <script>
-    // ===== Active nav link on scroll =====
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav a");
+  <div class="footer">&copy; 2025 Your Name. All rights reserved.</div>
 
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
 </body>
 </html>
