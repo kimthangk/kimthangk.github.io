@@ -1,3 +1,12 @@
+/*
+ * This CSS file has been updated to use the Poppins font,
+ * a free alternative to Google Sans from Google Fonts.
+ * The Poppins font is imported from the Google Fonts API.
+ */
+
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -5,10 +14,8 @@
   box-sizing: border-box;
 }
 
-/* Import Poppins from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 body {
+  /* Updated font-family to Poppins */
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   color: #222;
@@ -65,6 +72,17 @@ nav a:hover {
 .intro-text {
   font-size: 3rem;
   font-weight: 600;
+
+  /*
+   * Added properties to create a text gradient effect.
+   * This works by applying a background gradient and then
+   * clipping the background to the text shape.
+   */
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that don't support the above properties */
 }
 
 .profile-pic {
@@ -86,5 +104,6 @@ h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif; /* Explicitly set for consistency */
+  /* Explicitly setting for consistency, though it would inherit from body */
+  font-family: 'Poppins', sans-serif;
 }
