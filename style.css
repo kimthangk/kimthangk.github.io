@@ -75,8 +75,8 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #ddd;
@@ -99,8 +99,37 @@ h2 {
   color: #007bff;
   
   /* The gradient effect that will override the color above if supported */
-  background: linear-gradient(90deg, #007bff, #00c6ff);
+  background: linear-gradient(90deg, #007bff, #8a2be2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* * New CSS for the gradient button style. 
+ * Add class="gradient-button" to your HTML element (like a <button> or <a>) 
+ * to apply this style.
+ */
+.gradient-button {
+    /* Basic button styling */
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 9999px; /* This creates the pill shape */
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    
+    /* Gradient background */
+    background: linear-gradient(90deg, #c7d2fe, #d6eaff);
+    
+    /* Subtle box shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    
+    /* Hover effect for interaction */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gradient-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0
