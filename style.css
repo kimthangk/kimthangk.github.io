@@ -105,19 +105,8 @@ h2 {
   font-size: 1.8rem;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
-    /* The gradient effect that will override the color above if supported */
-  background: linear-gradient(90deg, #007bff, #8a2be2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* The order has been changed to ensure the gradient is applied correctly */
-  -webkit-text-fill-color: transparent;
-  color: transparent; 
+  color: #007bff;
 }
 
-/* Footer Styling */
-.footer {
-  text-align: center;
-  padding: 1rem 0;
-  color: #777;
-}
+
 
