@@ -1,347 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title><!-- EDIT: change page title --> Your Name — Minimal Site</title>
-
-  <!-- Fonts (use two fonts: serif for headings, sans for UI/body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <style>
-    /* =========================
-       CONFIG: change these to tune the colour/spacing
-       ========================= */
-    :root{
-      --bg: #0b0b0b;            /* page background */
-      --paper: #0f0f0f;         /* section background */
-      --muted: #9aa0a6;         /* muted text */
-      --text: #e7e7e7;          /* primary text */
-      --accent: #c87bff;        /* subtle accent (used sparingly) */
-      --max-width: 980px;       /* page column width */
-      --gutter: 32px;          /* spacing */
-    }
-
-    /* =========================
-       base reset & layout
-       ========================= */
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      min-height:100%;
-      background:var(--bg);
-      color:var(--text);
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      scroll-behavior:smooth;
-    }
-
-    /* vertical snap scrolling */
-    html{scroll-snap-type:y mandatory}
-    section{scroll-snap-align:start}
-
-    /* =========================
-       left vertical nav (minimal)
-       ========================= */
-    nav.site-nav{
-      position:fixed;
-      left:var(--gutter);
-      top:50%;
-      transform:translateY(-50%);
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      z-index:1100;
-      pointer-events:auto;
-    }
-
-    nav.site-nav a{
-      color:var(--muted);
-      text-decoration:none;
-      font-size:13px;
-      letter-spacing:0.06em;
-      transition:color 220ms ease, transform 200ms ease, opacity 180ms;
-      opacity:0.95;
-      padding:4px 6px;
-    }
-
-    nav.site-nav a:hover{ color:var(--text); transform:translateX(2px) }
-    nav.site-nav a.active{ color:var(--text); opacity:1; font-weight:600 }
-
-    /* hide nav on small view to keep it minimal */
-    @media (max-width:720px){
-      nav.site-nav{ left:12px; top:auto; bottom:14px; transform:none; flex-direction:row; background:transparent }
-    }
-
-    /* =========================
-       main column
-       ========================= */
-    .shell{
-      max-width:var(--max-width);
-      margin:0 auto;
-      padding: 48px var(--gutter);
-    }
-
-    /* section base style */
-    section.panel{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:flex-start;
-      padding: calc(72px + 2rem) var(--gutter);
-    }
-
-    /* centered inner column with max width */
-    .inner{
-      width:100%;
-      max-width:720px;
-      margin:0 auto;
-    }
-
-    /* =========================
-       HERO / INTRO
-       ========================= */
-    .hero{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    /* container that places name and image side-by-side */
-    .hero-row{
-      display:flex;
-      align-items:center;
-      gap:28px;
-      justify-content:center;
-      flex-wrap:nowrap;
-    }
-
-    /* text block beside image */
-    .hero-text{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-start;
-      gap:14px;
-      text-align:left;
-      color:var(--text);
-      font-family: 'Merriweather', Georgia, serif; /* serif for heading/feel */
-    }
-
-    .hero-text h1{
-      font-size:clamp(28px,6vw,56px); /* big responsive heading */
-      line-height:0.92;
-      margin:0;
-      font-weight:300; /* light, elegant */
-      letter-spacing:-0.01em;
-    }
-
-    .hero-text p.lead{
-      margin:0;
-      color:var(--muted);
-      font-family: 'Inter', sans-serif;
-      font-size:18px;
-      max-width:48ch;
-      font-weight:300;
-    }
-
-    /* image to the right — tidy circle */
-    .hero-image img{
-      width:128px;
-      height:128px;
-      object-fit:cover;
-      border-radius:50%;
-      border:2px solid rgba(255,255,255,0.06);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-      transition:transform 260ms ease, box-shadow 260ms ease;
-    }
-
-    .hero-image img:hover{ transform:translateY(-4px); box-shadow: 0 18px 36px rgba(0,0,0,0.6) }
-
-    /* keep image right of text on large screens; on small screens stack with image to the right visually but below in DOM if desired */
-    @media (max-width:880px){
-      .hero-row{ gap:18px }
-      .hero-image img{ width:96px; height:96px }
-      .hero-text h1{ font-size: clamp(26px,5.5vw,40px) }
-    }
-
-    @media (max-width:560px){
-      .hero-row{
-        flex-wrap:wrap;
-        justify-content:center;
-        text-align:center;
-      }
-      .hero-text{ align-items:center; }
-      /* image moves below visually but still 'to the right' concept on wide screens; user asked specifically to avoid image above the name — on small screens stacking is acceptable */
-    }
-
-    /* =========================
-       Section headings & prose
-       ========================= */
-    h2.section-title{
-      font-family: 'Merriweather', serif;
-      font-weight:300;
-      font-size:26px;
-      margin:0 0 14px 0;
-      color:var(--text);
-    }
-
-    .prose{
-      color:var(--muted);
-      font-family: 'Inter', sans-serif;
-      font-weight:300;
-      font-size:17px;
-      max-width:60ch;
-    }
-
-    /* subtle appear animations */
-    .reveal{
-      opacity:0;
-      transform:translateY(18px) scale(0.995);
-      transition:opacity 560ms cubic-bezier(.2,.9,.25,1), transform 560ms cubic-bezier(.2,.9,.25,1);
-      will-change:opacity, transform;
-    }
-    .reveal.show{
-      opacity:1;
-      transform:none;
-    }
-
-    /* footer */
-    footer.site-foot{
-      padding:36px var(--gutter);
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- LEFT NAV: minimal links -->
-  <nav class="site-nav" aria-label="Primary">
-    <a href="#home" class="nav-link" data-target="home">Home</a>
-    <a href="#about" class="nav-link" data-target="about">About</a>
-    <a href="#work" class="nav-link" data-target="work">Work</a>
-    <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- HOME / HERO -->
-  <section id="home" class="panel hero" aria-labelledby="hero-title">
-    <div class="inner">
-      <div class="hero-row reveal" id="hero-row">
-        <div class="hero-text">
-          <!-- EDIT: Your visible name. keep the > and < if you want the code-like look -->
-          <h1 id="hero-title">&gt; Your Name &lt;</h1> <!-- EDIT: change this to your name -->
-          <!-- EDIT: short tagline / one-line description -->
-          <p class="lead">Creator, researcher and writer interested in slow craft, effective giving, and thoughtful tools.</p> <!-- EDIT -->
-        </div>
-
-        <div class="hero-image" aria-hidden="false">
-          <!-- EDIT: replace the src with your file (local filename or full URL). recommended: square photo ~ 900px. -->
-          <img id="profile-pic" src="profile.jpg" alt="Portrait of Your Name"> <!-- EDIT: image filename -->
-        </div>
-      </div>
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="intro-container">
+      <h1 class="intro-text">Your Name</h1> <!-- Change "Your Name" here -->
+      <img src="profile.jpg" alt="Your photo" class="profile-pic" /> <!-- Replace profile.jpg with your image file -->
     </div>
+    <p class="tagline">Short description about you goes here.</p> <!-- Edit tagline -->
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="panel" aria-labelledby="about-title">
-    <div class="inner">
-      <h2 id="about-title" class="section-title reveal">About</h2>
-      <div class="prose reveal">
-        <!-- EDIT: write a concise bio (2–4 short sentences). avoid long paragraphs for the minimalist look. -->
-        <p>I study how compassion and principled concern shape real-world giving and design small digital tools that help people act on their values. I prefer careful experiments, clear notes, and work that nudges toward better choices.</p>
-      </div>
-    </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>Write about yourself here. You can describe your background, interests, and work.</p>
   </section>
 
-  <!-- WORK -->
-  <section id="work" class="panel" aria-labelledby="work-title">
-    <div class="inner">
-      <h2 id="work-title" class="section-title reveal">Work</h2>
-      <div class="prose reveal">
-        <!-- EDIT: briefly list or describe key projects (link them if you have URLs) -->
-        <p>Selected: a tiny CLI utility for repetitive research tasks; a notes collection on effective donation; small interactive demos exploring attention and craft.</p>
-      </div>
-    </div>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Highlight some of your favourite work here.</p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="panel" aria-labelledby="contact-title">
-    <div class="inner">
-      <h2 id="contact-title" class="section-title reveal">Contact</h2>
-      <div class="prose reveal">
-        <!-- EDIT: update your email and preferred links -->
-        <p>Email: <a href="mailto:your.email@example.com" style="color:var(--text) ; text-decoration:underline;">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourhandle" target="_blank" rel="noopener" style="color:var(--text); text-decoration:underline;">@yourhandle</a></p>
-      </div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
   </section>
 
-  <footer class="site-foot">
-    <!-- EDIT: copyright/year or short footer copy -->
-    &copy; <span id="site-year"></span> Your Name — Built with care.
-  </footer>
-
-  <script>
-    // ========= JS: active nav, reveal on scroll, small accessibility helpers =========
-
-    // set current year
-    document.getElementById('site-year').textContent = new Date().getFullYear();
-
-    // intersection observer for reveals
-    const revealed = document.querySelectorAll('.reveal');
-    const ro = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.18 });
-
-    revealed.forEach(r => ro.observe(r));
-
-    // highlight active nav item based on scroll position
-    const navLinks = document.querySelectorAll('nav.site-nav a');
-    const sections = Array.from(document.querySelectorAll('section.panel'));
-
-    function setActive() {
-      const y = window.scrollY;
-      const vh = window.innerHeight;
-      let currentId = sections[0].id;
-
-      for (let s of sections) {
-        // choose the section closest to top quarter of viewport
-        const rect = s.getBoundingClientRect();
-        if (rect.top <= vh * 0.35) currentId = s.id;
-      }
-
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + currentId);
-      });
-    }
-
-    window.addEventListener('scroll', setActive);
-    window.addEventListener('resize', setActive);
-    setActive(); // init on load
-
-    // smooth scroll for nav clicks (extra - ensures offset-friendly scroll)
-    navLinks.forEach(a => {
-      a.addEventListener('click', (ev) => {
-        ev.preventDefault();
-        const tgt = document.querySelector(a.getAttribute('href'));
-        if (!tgt) return;
-        // compute offset so the section aligns visually similar across devices
-        const top = tgt.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({ top, behavior: 'smooth' });
-      });
-    });
-
-    // keyboard accessibility: allow left-nav to be tabbed easily on small screens
-    document.querySelectorAll('nav.site-nav a').forEach(a => a.setAttribute('tabindex', '0'));
-  </script>
 </body>
 </html>
