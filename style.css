@@ -38,8 +38,10 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #222;
   font-weight: 500;
+    /* Add a border and background to create the pill shape */
+  border: 1px solid #eee;
+  background-color: #f4f4f4;
   transition: transform 0.2s ease;
 
   background: linear-gradient(90deg, #007bff, #8a2be2);
@@ -48,11 +50,8 @@ nav a {
   background-clip: text;
   /* Button-specific styling */
   display: inline-block; /* Essential for padding and sizing */
-  padding: 0.5rem 1.25rem;
+  padding: 0.3rem 1.2rem;
   border-radius: 9999px; /* This creates the pill shape */
-  
-  /* Gradient background */
-  background: linear-gradient(90deg, #c7d2fe, #d6eaff);
 }
 
 nav a:hover {
@@ -87,8 +86,8 @@ nav a:hover {
 }
 
 .profile-pic {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #ddd;
