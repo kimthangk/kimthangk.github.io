@@ -103,3 +103,10 @@ h2 {
   font-weight: 500;
   /* Explicitly setting for consistency, though it would inherit from body */
   font-family: 'Poppins', sans-serif;
+  
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
