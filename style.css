@@ -72,17 +72,7 @@ nav a:hover {
 .intro-text {
   font-size: 3rem;
   font-weight: 600;
-
-  /*
-   * Added properties to create a text gradient effect.
-   * This works by applying a background gradient and then
-   * clipping the background to the text shape.
-   */
-  background: linear-gradient(90deg, #007bff, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; /* Fallback for browsers that don't support the above properties */
+  /* Removed gradient properties from here */
 }
 
 .profile-pic {
@@ -106,4 +96,11 @@ h2 {
   font-weight: 500;
   /* Explicitly setting for consistency, though it would inherit from body */
   font-family: 'Poppins', sans-serif;
+  
+  /* Added properties to create a text gradient effect for section headers */
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that don't support the above properties */
 }
