@@ -108,5 +108,10 @@ h2 {
   color: #007bff;
 }
 
-
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #777;
+}
 
