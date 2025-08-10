@@ -39,8 +39,16 @@ nav {
 nav a {
   text-decoration: none;
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
   transition: opacity 0.2s ease;
+  
+  /* Added properties to create a text gradient effect for nav links */
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that don't support the above properties */
+  display: inline-block;
 }
 
 nav a:hover {
@@ -72,7 +80,6 @@ nav a:hover {
 .intro-text {
   font-size: 3rem;
   font-weight: 600;
-  /* Removed gradient properties from here */
 }
 
 .profile-pic {
@@ -96,11 +103,3 @@ h2 {
   font-weight: 500;
   /* Explicitly setting for consistency, though it would inherit from body */
   font-family: 'Poppins', sans-serif;
-  
-  /* Added properties to create a text gradient effect for section headers */
-  background: linear-gradient(90deg, #007bff, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; /* Fallback for browsers that don't support the above properties */
-}
