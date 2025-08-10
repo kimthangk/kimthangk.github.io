@@ -46,36 +46,6 @@
 <footer>
   <div class="footer">&copy; 2025 Thanakorn Angkasirisan. All rights reserved.</div>
 </footer>
-
-  <script>
-    // This script handles the dynamic behavior of the navigation bar.
-    document.addEventListener('DOMContentLoaded', () => {
-      const nav = document.getElementById('main-nav');
-      let lastScrollY = window.scrollY;
-
-      const handleScroll = () => {
-        // Hide the nav if we're scrolling down and have scrolled past 100px
-        if (window.scrollY > 100 && window.scrollY > lastScrollY) {
-          nav.classList.add('nav-hidden');
-        } else {
-          // Show the nav if we're scrolling up
-          nav.classList.remove('nav-hidden');
-        }
-        lastScrollY = window.scrollY;
-      };
-
-      const handleMouseOver = () => {
-        // Show the nav when the mouse hovers over it
-        nav.classList.remove('nav-hidden');
-      };
-
-      // Add event listeners for scrolling and mouse hovering
-      window.addEventListener('scroll', handleScroll);
-      nav.addEventListener('mouseover', handleMouseOver);
-      // The mouseout event will call handleScroll to hide the nav if still scrolling down
-      nav.addEventListener('mouseout', handleScroll);
-    });
-  </script>
   
 </body>
 </html>
