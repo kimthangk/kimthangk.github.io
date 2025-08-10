@@ -3,73 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title> <!-- ✏️ Change to your name -->
+    <title>Your Name</title>
+
     <style>
-        body {
+        /* ====== GLOBAL STYLES ====== */
+        html, body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0e0e0e;
+            color: white;
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-            z-index: 1000;
-        }
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
+
+        /* Section full screen */
         section {
             height: 100vh;
-            padding: 80px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-snap-align: start;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
-        #home { background: #f7f7f7; }
-        #about { background: #e3f2fd; }
-        #projects { background: #fff9c4; }
-        #contact { background: #ffecb3; }
+
+        /* Snap scrolling */
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
+        /* ====== NAVIGATION ====== */
+        nav {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: white;
+        }
+
+        /* ====== SECTION STYLES ====== */
+        .intro {
+            background-color: #0e0e0e;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #1a1a1a;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .work {
+            background-color: #0e0e0e;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .contact {
+            background-color: #1a1a1a;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        /* Smooth fade on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
+
+    <!-- ====== NAVIGATION ====== -->
     <nav>
-        <!-- Navigation menu -->
-        <a href="#home">Home</a>
+        <!-- Change link labels as you like -->
+        <a href="#intro" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="home">
-        <h1>Your Name</h1> <!-- ✏️ Change to your name -->
-        <p>Welcome to my personal website.</p> <!-- ✏️ Edit intro -->
+    <!-- ====== SECTIONS ====== -->
+    <section id="intro" class="intro fade-in">
+        <!-- Edit your intro text here -->
+        <div>
+            <h1>Your Name</h1>
+            <p>Short tagline about yourself.</p>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short bio about yourself here.</p> <!-- ✏️ Edit bio -->
+    <section id="about" class="about fade-in">
+        <!-- Edit your about text here -->
+        <div>
+            <h2>About Me</h2>
+            <p>A few sentences about who you are and what you do.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 - description</li> <!-- ✏️ Edit -->
-            <li>Project 2 - description</li> <!-- ✏️ Edit -->
-            <li>Project 3 - description</li> <!-- ✏️ Edit -->
-        </ul>
+    <section id="work" class="work fade-in">
+        <!-- Edit your work section here -->
+        <div>
+            <h2>Work</h2>
+            <p>Highlight your projects, experience, or portfolio.</p>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p> <!-- ✏️ Edit email -->
-        <p>Social: <a href="#">Twitter</a>, <a href="#">LinkedIn</a></p> <!-- ✏️ Edit links -->
+    <section id="contact" class="contact fade-in">
+        <!-- Edit your contact info here -->
+        <div>
+            <h2>Contact</h2>
+            <p>Email: your@email.com</p>
+            <p>Links to social media here.</p>
+        </div>
     </section>
+
+    <script>
+        /* ====== HIGHLIGHT ACTIVE LINK ====== */
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        /* ====== FADE-IN ANIMATION ====== */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
