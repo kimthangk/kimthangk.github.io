@@ -5,8 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
   color: #222;
   line-height: 1.6;
@@ -83,4 +86,5 @@ h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif; /* Explicitly set for consistency */
 }
