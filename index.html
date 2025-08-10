@@ -1,74 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanakorn Angkasirisan</title> <!-- Change this to your name -->
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
-      color: #111;
-      scroll-behavior: smooth; /* Enables smooth scrolling */
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      color: #555;
-    }
-
-    section {
-      min-height: 100vh;
-      padding: 6rem 2rem 2rem; /* Top padding accounts for nav height */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation Menu -->
+  <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -77,39 +17,31 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center bg-black text-white">
-    <div class="text-center">
-      <div class="flex items-center justify-center gap-4">
-        <!-- Profile Image -->
-        <img src="images/profile.jpg" alt="Your Name" class="w-20 h-20 rounded-full border-2 border-white">
-        
-        <!-- Name Text -->
-        <h1 class="text-4xl font-bold">&gt; Your Name &lt;</h1>
-      </div>
-      <p class="mt-4 text-lg">Your tagline or brief description here.</p>
+  <section id="home" class="section home-section">
+    <div class="intro-container">
+      <h1 class="intro-text">Your Name</h1> <!-- Change "Your Name" here -->
+      <img src="profile.jpg" alt="Your photo" class="profile-pic" /> <!-- Replace profile.jpg with your image file -->
     </div>
+    <p class="tagline">Short description about you goes here.</p> <!-- Edit tagline -->
   </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About</h2>
-    <p>Write a brief bio here. Mention your background, interests, and goals. Keep it concise, like a few sentences.</p>
+    <p>Write about yourself here. You can describe your background, interests, and work.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <p>List some projects you’ve worked on. You can include links, descriptions, or even images if you want to expand later.</p>
+    <p>Highlight some of your favourite work here.</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>Social: <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a> | <a href="https://github.com/yourhandle" target="_blank">GitHub</a></p>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
   </section>
-
-  <div class="footer">&copy; 2025 Your Name. All rights reserved.</div>
 
 </body>
 </html>
