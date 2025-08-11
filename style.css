@@ -32,7 +32,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  border-bottom: 3px solid #eee;
+  border-bottom: 1.6px solid #eee;
   z-index: 1000;
 }
 
@@ -40,7 +40,7 @@ nav a {
   text-decoration: none;
   font-weight: 500;
     /* Add a border and background to create the pill shape */
-  border: 3px solid #eee;
+  border: 1.6px solid #eee;
   background-color: #f4f4f4;
   transition: transform 0.2s ease;
 
