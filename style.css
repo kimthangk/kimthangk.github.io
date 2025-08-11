@@ -108,6 +108,12 @@ h2 {
   color: #007bff;
 }
 
+/* Hanging Indent for APA */
+.hanging-indent {
+  padding-left: 2em; /* Adjust this value as needed */
+  text-indent: -2em; /* This value must be the negative of padding-left */
+}
+
 /* Footer Styling */
 .footer {
   text-align: center;
