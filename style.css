@@ -129,19 +129,4 @@ h2 {
   margin-top: 20px;
 }
 
-/* Base button styling */
-.profile-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0077b5; /* A blue color, similar to LinkedIn */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
 
-/* Hover effect */
-.profile-button:hover {
-  background-color: #005582; /* A darker blue on hover */
-}
