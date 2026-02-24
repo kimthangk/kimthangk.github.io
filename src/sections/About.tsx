@@ -78,7 +78,7 @@ export default function About() {
             About Me
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-            Professional Experience
+            Experience
           </h2>
         </div>
 
