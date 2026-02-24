@@ -156,7 +156,7 @@ export default function Publications() {
               className="text-primary hover:text-primary-dark link-underline"
             >
               Google Scholar
-            </a>{''}
+            </a>{' '}
             profile.
           </p>
         </div>
