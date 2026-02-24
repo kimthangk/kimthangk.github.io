@@ -1,14 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { Mail, GraduationCap, Github, Linkedin, Twitter } from 'lucide-react'
+import { GraduationCap, Github, Linkedin, Twitter } from 'lucide-react'
 
 import profilePic from '../../profile.jpg'
 
 const contactLinks = [
-  {
-    name: 'Email',
-    icon: <Mail className="w-5 h-5" />,
-    url: 'mailto:thanakornangkasirisan@gmail.com',
-  },
   {
     name: 'Google Scholar',
     icon: <GraduationCap className="w-5 h-5" />,
@@ -100,8 +95,7 @@ export default function Hero() {
                 }`}
               style={{ transitionDelay: '400ms' }}
             >
-              I'm an interdisciplinary researcher. I approach big ideas and
-              important questions with academic freedom.
+              Interdisciplinary Researcher. <br> thanakornangkasirisan@gmail.com
             </p>
 
             {/* Contact Icons - Icon only */}
