@@ -150,13 +150,13 @@ export default function Publications() {
           <p className="text-gray-500 text-sm">
             For a complete list of publications and citations, please visit my{' '}
             <a
-              href="https://scholar.google.com"
+              href="https://scholar.google.com/citations?user=ZgRwryYAAAAJ&hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary-dark link-underline"
             >
               Google Scholar
-            </a>{'https://scholar.google.com/citations?user=ZgRwryYAAAAJ&hl=en'}
+            </a>{''}
             profile.
           </p>
         </div>
