@@ -88,7 +88,7 @@ export default function Projects() {
 
               {/* Optional link */}
               {project.link && (
-                
+                <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
