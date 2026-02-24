@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Mail, GraduationCap, Github, Linkedin, Twitter, Fingerprint } from 'lucide-react'
+import { Mail, GraduationCap, Github, Linkedin, Twitter } from 'lucide-react'
 
 import profilePic from '../../profile.jpg'
 
@@ -13,11 +13,6 @@ const contactLinks = [
     name: 'Google Scholar',
     icon: <GraduationCap className="w-5 h-5" />,
     url: 'https://scholar.google.com/citations?user=ZgRwryYAAAAJ&hl=en',
-  },
-  {
-    name: 'ORCID',
-    icon: <Fingerprint className="w-5 h-5" />,
-    url: 'https://orcid.org/0000-0001-8554-8582',
   },
   {
     name: 'GitHub',
