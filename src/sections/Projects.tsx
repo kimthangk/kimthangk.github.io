@@ -94,7 +94,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-sm text-primary font-medium hover:underline mt-auto"
                 >
-                  Learn more →
+                  {'Learn more →'}
                 </a>
               )}
             </div>
