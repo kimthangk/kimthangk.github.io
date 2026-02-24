@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Mail, GraduationCap, Github, Twitter } from 'lucide-react'
 
-import profilePic from '../../profilepic.png'
+import profilePic from '../../profile.jpg'
 
 const contactLinks = [
   {
