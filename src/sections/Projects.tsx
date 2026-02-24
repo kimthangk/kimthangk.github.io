@@ -24,10 +24,10 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Your Project Title',
-      description: 'A short description of what the project is about and its goals.',
+      title: 'Solving Multi-Hop Problem in Knowledge Editing',
+      description: 'We apply circuit discovery method to edit knowledge in LLMs at circuit-level expecting to yield improved performance on multi-hop tasks',
       status: 'Ongoing',
-      tags: ['Tag1', 'Tag2', 'Tag3'],
+      tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop problem'],
       link: 'https://your-link.com', // optional
     },
   ]
