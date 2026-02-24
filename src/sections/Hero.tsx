@@ -65,7 +65,7 @@ export default function Hero() {
               />
 
               {/* Image container */}
-              <div className="absolute inset-0 rounded-full overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-500">
+              <div className="absolute inset-1 rounded-full overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-500">
                 <img
                   src={profilePic}
                   alt="Thanakorn Angkasirisan"
