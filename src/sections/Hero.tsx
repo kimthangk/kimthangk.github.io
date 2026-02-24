@@ -95,7 +95,7 @@ export default function Hero() {
                 }`}
               style={{ transitionDelay: '400ms' }}
             >
-              <br /> thanakornangkasirisan@gmail.com
+              Interdisciplinary Researcher <br /> thanakornangkasirisan@gmail.com
             </p>
 
             {/* Contact Icons - Icon only */}
