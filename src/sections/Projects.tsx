@@ -55,7 +55,7 @@ export default function Projects() {
           style={{ transitionDelay: '200ms' }}
         >
           <p className="text-gray-500">
-            New projects coming soon. Stay tuned for updates on ongoing research.
+            New projects coming soon.
           </p>
         </div>
       </div>
