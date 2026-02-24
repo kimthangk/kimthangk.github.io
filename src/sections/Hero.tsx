@@ -65,7 +65,7 @@ export default function Hero() {
               />
 
               {/* Image container */}
-              <div className="absolute inset-4 rounded-full overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-500">
+              <div className="absolute inset-0 rounded-full overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-500">
                 <img
                   src={profilePic}
                   alt="Thanakorn Angkasirisan"
@@ -79,13 +79,12 @@ export default function Hero() {
           <div className="text-center lg:text-left max-w-xl">
             {/* Name */}
             <h1
-              className={`text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 transition-all duration-1000 ${isVisible
+              className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4 transition-all duration-1000 ${isVisible
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-8'
                 }`}
             >
-              <span className="block">Thanakorn</span>
-              <span className="block text-gradient">Angkasirisan</span>
+              Thanakorn Angkasirisan
             </h1>
 
             {/* Tagline */}
@@ -131,9 +130,9 @@ export default function Hero() {
           }`}
         style={{ transitionDelay: '800ms' }}
       >
-        <div className="flex flex-col items-center gap-2 text-gray-400">
+        <div className="flex flex-col items-center gap-2 text-gray-300">
           <span className="text-xs uppercase tracking-widest">Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent" />
+          <div className="w-px h-6 bg-gradient-to-b from-primary to-transparent" />
         </div>
       </div>
     </section>
