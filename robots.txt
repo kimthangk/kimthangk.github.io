@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /dist/
-Disallow: /node_modules/
 Sitemap: https://kimthangk.github.io/sitemap.xml
