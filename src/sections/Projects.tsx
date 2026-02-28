@@ -25,7 +25,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
-      description: 'We apply circuit discovery method to edit knowledge in LLMs at circuit-level expecting to yield improved performance on multi-hop tasks',
+      description: 'We apply circuit discovery methods to edit knowledge in LLMs at the circuit-level, expecting to yield improved performance on multi-hop reasoning',
       status: 'Ongoing',
       tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop problem'],
       link: 'https://your-link.com', // optional
