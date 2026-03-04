@@ -27,7 +27,7 @@ export default function Projects() {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
       description: 'We apply circuit discovery methods to edit knowledge in LLMs at the circuit-level, expecting to yield improved performance on multi-hop reasoning',
       status: 'Ongoing',
-      tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop problem'],
+      tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop reasoning'],
       link: 'https://your-link.com', // optional
     },
   ]
