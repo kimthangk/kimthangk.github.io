@@ -28,7 +28,7 @@ export default function Projects() {
       description: 'Like Duolingo, but for becoming a better self. Level up your mind, body, relationships, healthspan, and more — with gamified, evidence-based lessons and daily challenges.',
       status: 'Prototyping',
       tags: ['wellness app', 'science-based', 'gamified'],
-      link: 'https://le-well-up-client.vercel.app', // optional
+      link: 'https://lewellup.onrender.com', // optional
     },
     {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
