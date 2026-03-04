@@ -35,7 +35,7 @@ export default function Projects() {
       description: 'Fun learning and motivation app for holistic wellness and personal development. Learn with quick, science-based lessons.',
       status: 'Prototyping',
       tags: ['wellness app', 'longevity', 'positive psychology'],
-      link: 'https://your-link.com', // optional
+      link: 'https://claude.ai/public/artifacts/69dc13bd-f28a-4b09-9120-6a63a0a3ec55', // optional
     },
   ]
 
