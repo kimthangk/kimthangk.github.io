@@ -28,7 +28,7 @@ export default function Projects() {
       description: 'Like Duolingo, but for becoming a better self. Level up your mind, body, relationships, healthspan, and more — with gamified, evidence-based lessons and daily challenges.',
       status: 'Prototyping',
       tags: ['wellness app', 'science-based', 'gamified'],
-      link: 'https://claude.ai/public/artifacts/69dc13bd-f28a-4b09-9120-6a63a0a3ec55', // optional
+      link: 'https://le-well-up-client.vercel.app', // optional
     },
     {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
