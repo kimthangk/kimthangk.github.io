@@ -25,7 +25,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'LeWellUp App',
-      description: 'Like Duolingo, but for becoming a better self. Level up your mind, body, relationships, lifespan, and more — with gamified, evidence-based lessons and daily challenges.',
+      description: 'Like Duolingo, but for becoming a better self. Level up your mind, body, relationships, healthspan, and more — with gamified, evidence-based lessons and daily challenges.',
       status: 'Prototyping',
       tags: ['wellness app', 'longevity', 'positive psychology'],
       link: 'https://claude.ai/public/artifacts/69dc13bd-f28a-4b09-9120-6a63a0a3ec55', // optional
