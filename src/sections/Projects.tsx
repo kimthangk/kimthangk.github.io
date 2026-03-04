@@ -30,6 +30,13 @@ export default function Projects() {
       tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop reasoning'],
       link: 'https://your-link.com', // optional
     },
+    {
+      title: 'LeWellUp',
+      description: 'Fun learning and motivation app for holistic wellness and personal development. Learn with quick, science-based lessons.',
+      status: 'Prototyping',
+      tags: ['wellness app', 'longevity', 'positive psychology'],
+      link: 'https://your-link.com', // optional
+    },
   ]
 
   return (
