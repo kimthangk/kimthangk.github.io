@@ -24,18 +24,18 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Solving Multi-Hop Problem in Knowledge Editing',
-      description: 'We apply circuit discovery methods to edit knowledge in LLMs at the circuit-level, expecting to yield improved performance on multi-hop reasoning',
-      status: 'Ongoing',
-      tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop reasoning'],
-      link: 'https://your-link.com', // optional
-    },
-    {
       title: 'LeWellUp',
       description: 'Fun learning and motivation app for holistic wellness and personal development. Learn with quick, science-based lessons.',
       status: 'Prototyping',
       tags: ['wellness app', 'longevity', 'positive psychology'],
       link: 'https://claude.ai/public/artifacts/69dc13bd-f28a-4b09-9120-6a63a0a3ec55', // optional
+    },
+    {
+      title: 'Solving Multi-Hop Problem in Knowledge Editing',
+      description: 'We apply circuit discovery methods to edit knowledge in LLMs at the circuit-level, expecting to yield improved performance on multi-hop reasoning',
+      status: 'Ongoing',
+      tags: ['knowledge editing', 'mechanistic interpretability', 'multi-hop reasoning'],
+      link: 'https://your-link.com', // optional
     },
   ]
 
