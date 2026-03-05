@@ -69,7 +69,7 @@ export default function Publications() {
             }`}
         >
           <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
-            Academic Work
+            Research
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             Publications
