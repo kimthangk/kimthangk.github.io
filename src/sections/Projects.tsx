@@ -53,7 +53,7 @@ export default function Projects() {
           }`}
         >
           <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
-            Research
+            Cool
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             Projects
