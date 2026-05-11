@@ -28,7 +28,7 @@ export default function Projects() {
       description: 'An OS for human wellness and flourishing.',
       status: 'Pre-launch',
       tags: ['wellness app', 'science-based', 'gamified'],
-      link: 'lewell.app', // optional
+      link: 'https://lewell.app', // optional
     },
     {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
