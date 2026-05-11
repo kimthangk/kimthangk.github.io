@@ -24,11 +24,11 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'LeWellUp App',
-      description: 'Like Duolingo, but for becoming a better self. Level up your mind, body, relationships, healthspan, and more — with gamified, evidence-based lessons and daily challenges.',
-      status: 'Prototyping',
+      title: 'LeWell App',
+      description: 'An OS for human wellness and flourishing.',
+      status: 'Pre-launch',
       tags: ['wellness app', 'science-based', 'gamified'],
-      link: 'https://lewellup.onrender.com', // optional
+      link: 'lewell.app', // optional
     },
     {
       title: 'Solving Multi-Hop Problem in Knowledge Editing',
