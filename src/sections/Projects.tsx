@@ -25,8 +25,8 @@ export default function Projects() {
   const projects = [
     {
       title: 'LeWell App',
-      description: 'An OS for human wellness and flourishing.',
-      status: 'Pre-launch',
+      description: 'An OS for learning how to live well.',
+      status: 'Live on iOS & Android',
       tags: ['wellness app', 'science-based', 'gamified'],
       link: 'https://lewell.app', // optional
     },
