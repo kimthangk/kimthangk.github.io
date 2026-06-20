@@ -93,7 +93,7 @@ export default function About() {
           >
             <div className="prose prose-lg text-gray-600 leading-relaxed">
               <p className="mb-6">
-                My name is Thanakorn Angkasirisan, or unofficially as Kim. I am a co-founder and CEO of LeWell, an OS for human wellness and flourishing. My academic background is in experimental psychology. The ultimate goal of my work is to maximise long-term global welfare and ensure a safe transition into the post-AGI era.
+                My name is Thanakorn Angkasirisan, or unofficially as Kim. I am a co-founder and CEO of LeWell, an OS for learning how to live well. My academic background is in experimental psychology. The goal of my career is to maximise long-term global welfare and ensure a safe transition into the post-AGI era.
               </p>
             </div>
           </div>
